@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gif Spectacular</title>
+
+  <!-- Link to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+  <!-- Link to the Bootstrap Library -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Link to an sdditional CSS File -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Overall Bootstrap Grid -->
+  <div class="container">
+
+    <!-- Jumbotron with Title -->
+    <div class="jumbotron">
+
+      <h1 class="text-center"><strong>Welcome to Gif-Wonderland</strong></h1>
+      <h2 class="text-center" id="instructions">Press the buttons to see the action</h2>
+
+    </div> <!-- End Jumbotron -->
+
+    <!-- Row containing the animal buttons -->
+    <div class="row" id="buttonPanel">
+    </div> <!-- End row with animal buttons -->
+
+    <!-- Row containing the Gifs and the user form -->
+    <div class="row">
+
+      <!-- Left panel containing the Gifs -->
+      <div class="col-lg-10" id="gifPanel">
+      </div> <!-- End left panel containing the Gifs  -->
+
+      <!-- Right panel containing the user form -->
+      <div class="col-lg-2 formPanel"> 
+        <form id="animal-form">
+          <label for="random-input" class="inputLabel">Add Anything</label>
+          <input type="text" id="random-input"><br>
+
+          <!-- Button triggers a new animal to be added -->
+          <input id="add-random" type="submit" value="Submit">
+        </form>
+      </div> <!-- End right panel containing the user form -->
+
+    </div> <!-- End row with Gifs and user form -->
+
+    <!-- Row containting the website footer -->
+    <div class="row">
+
+      <div id="footerSpacer">
+      </div>
+
+      <div class="footer navbar-fixed-bottom" id="footerPanel">
+        <div class="copyright">"Powered By GIPHY"
+
+      
+        </div>
+      </div>
+
+    </div> <!-- End the footer row -->
+
+  </div> <!-- End Bootstrap Grid -->
+
+  <script type="text/javascript" src="assets/js/gif.js"></script>
+
+</body>
+</html>
